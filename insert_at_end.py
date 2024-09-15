@@ -30,3 +30,6 @@ obj.insert_at_end(12)
 obj.insert_at_end(14)
 obj.insert_at_end(16)
 obj.print_list()
+
+# Note: In python , we can even return the empty values
+# and in python , it can act like an exit statement 
