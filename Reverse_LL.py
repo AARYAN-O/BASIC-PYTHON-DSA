@@ -19,7 +19,13 @@ class LinkedList:
     def reverse_LL(self):
         prev=None
         current=self.head
-        while current:
+        # this loop actually traverses to the right direction.
+        # current.next is not None means we need to traverse till the second-last node only (current becomes second-last node finally)
+        # current is not None means we need to traverse till the last Node(current becomes last Node finally)
+        # at last of the following loop prev and current will become the same initially 
+        # then current will become None
+        # and finally since prev is the last node, it should become head
+        while current is not None:
             next_node=current.next
             current.next=prev
             prev=current
@@ -37,6 +43,6 @@ obj.insertAtEnd(14)
 obj.insertAtEnd(16)
 obj.insertAtEnd(18)
 obj.printList()
-print("reversed Linked List")
+print("Reversed Linked List")
 obj.reverse_LL()
 obj.printList()
