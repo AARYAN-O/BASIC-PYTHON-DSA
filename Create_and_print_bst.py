@@ -51,4 +51,7 @@ preorder(root)
 print()
 
 
+# What is the difference between binary tree and bst ?
+# The difference is that in binary tree the order of arrangement can be anything 
+# In bst order of arrangement is specific meaning that the left node should always be lesser than the right node value.
     
